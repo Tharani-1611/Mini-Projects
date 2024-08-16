@@ -1,0 +1,222 @@
+:root{
+
+}
+
+body,h2{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.landing{
+    background-image: url(biryani.avif);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: azure;
+}
+header a{
+    text-decoration: none;
+    color: #ccc323;
+    min-width: 120px;
+}
+
+.name{
+    font-size: 30px;
+}
+
+header {
+    display: flex;
+    padding:1em;
+    flex-wrap: wrap;
+    row-gap: 1em;
+}
+header h2 i,nav a i{
+    margin-right: .5em;
+}
+
+#logo{
+    flex: 2;
+    font-size: 1.25em;
+    min-width: 220px;
+    
+}
+
+
+nav{
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    flex: 1;
+}
+
+nav a:hover{
+    color: aqua;
+}
+
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 24vh;
+    justify-content: center;
+    padding: 2em;
+}
+
+.targetline1{
+    color: rgb(216, 23, 23);
+    font-size: 2em;
+    font-weight: bolder; 
+}
+
+.targetline2{
+    color: rgb(236, 194, 88);
+}
+
+.maintext div{
+   margin-top: .75em;
+}
+
+.maintext button{
+    width: 20vw;
+    margin: 2em;
+    border-radius: 20px;
+    padding: .67em;
+    background-color: rgb(37, 199, 86);
+    color: whitesmoke;
+    border: 1px solid rgb(37, 199, 86); ;
+}
+
+
+.menu{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    background:linear-gradient(to right,rgb(99, 97, 97),rgb(31, 28, 28));
+    color:whitesmoke;
+
+}
+
+#menuhead,#locheading{
+    display:grid;
+    font-size: 2em;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));  
+    background:linear-gradient(to right,rgb(99, 97, 97),rgb(31, 28, 28));
+    color:red;
+    display: flex;
+    justify-content: center;
+}
+
+.menu th{
+    color: aqua;
+    font-size:1.3em;
+}
+
+table{
+    width: 100%;
+    padding: 1em;
+}
+
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+}
+
+.menu td:nth-child(1){
+    flex: 1;
+   justify-self: left;
+}
+
+.menu td:nth-child(2){
+    justify-self: right;
+}
+
+.maincourse{
+    grid-row:span 2;
+}
+
+#locheading{
+    background:linear-gradient(to right,rgb(99, 97, 97),rgb(31, 28, 28));
+    
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));  
+}
+
+.locations{
+    background:linear-gradient(to right,rgb(99, 97, 97),rgb(31, 28, 28));
+    color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    grid-column:span 3;
+    min-width: 1020px;
+}
+
+.locations h3{
+    color:aqua;
+    margin-bottom: .8em;
+}
+
+.locations div{
+     flex: 2;
+     padding:1em;
+     min-width: 320px;
+}
+
+footer{
+    background-color: rgb(0, 0, 0);
+    color:snow;
+    padding:.25em 1em;
+}
+
+
+#copyright{
+    margin-left:20px;
+}
+
+.social-menu ul{
+    display: flex;
+    padding:0;
+}
+
+.social-menu ul li{
+    list-style: none;
+    display:inline-block;
+    margin: 0 15px;
+}
+
+.social-menu ul li .fab{
+    font-size: 25px;
+    line-height: 40px;
+    transition: .3s;
+    color: #000;
+}
+
+.social-menu ul li .fab:hover{
+    color: #fff;
+}
+
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+    
+.social-menu ul li a:hover{
+    transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: #4267B2;
+}
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #E4405F;
+}
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: #00ACEE;
+}
